@@ -1,0 +1,46 @@
+/* Custom CSS */
+
+/*       CONTENTS       */
+/*______________________*/
+/*   1. Navigation      */
+/*   2. Backgrounds     */
+
+/*   1. NAVIGATION      */
+.navbardark {
+    background-color: rgba(3, 2, 4, 0.60);
+    border-radius: 1000px;
+    box-shadow: 10px 10px 10px -10px rgba(0, 0, 0, 0.2);
+}
+.navelement {
+    color: #dbdbdb;
+    font-size: 1.2em;
+}
+.navelement:hover {
+    color: #fff;
+    font-size: 1.2em;
+}
+.navelement:focus {
+    color: #fff;
+    font-size: 1.2em;
+}
+.activenav {
+    color: #fff;
+    font-size: 1.2em;
+}
+.activenav:hover {
+    color: #dbdbdb;
+    font-size: 1.2em;
+}
+.activenav:focus {
+    color: #dbdbdb;
+    font-size: 1.2em;
+}
+
+/*   2. Backgrounds     */
+
+.bg1 {
+    background-color: #FFDEE9;
+    background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}

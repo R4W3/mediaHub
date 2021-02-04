@@ -1,0 +1,15 @@
+{% block music %}
+<div class="row">
+    {% for key, value in m_lib.items() %}
+    <div class="col-2">
+        <div class="card" style="background-image: url('{{ value['cover'] }}');background-repeat: no-repeat;
+         height: 196px; background-size: cover">
+            <div class="card-body">
+
+            </div>
+        </div>
+        <p>{{ value["artist"] }} - {{ value["album"] }}</p>
+    </div>
+    {% endfor %}
+</div>
+{% endblock %}
