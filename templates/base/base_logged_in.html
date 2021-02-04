@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
+    <script src="https://kit.fontawesome.com/193685bc68.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>{% block title %}{% endblock %} - mediaHub</title>
+</head>
+<body>
+<br>
+<div class="container" style="background-color: #303030; border-radius: 1000px">
+    <br>
+    <div class="container">
+        <nav class="nav">
+            <a class="nav-link active" aria-current="page" href="#"><i class="fas fa-home"></i>&nbsp;Home</a>
+            <a class="nav-link" href="#"><i class="fas fa-film"></i>&nbsp;Movies</a>
+            <a class="nav-link" href="#"><i class="fas fa-tv"></i>&nbsp;TV</a>
+            <a class="nav-link" href="#"><i class="fas fa-music"></i>&nbsp;Music</a>
+        </nav>
+    </div>
+    <br>
+</div>
+<br>
+{% block content %}{% endblock %}
+<script type="text/javascript" src="{{ url_for('static', filename='js/bootstrap.bundle.js') }}"></script>
+<script type="text/javascript" src="{{ url_for('static', filename='js/bootstrap.bundle.min.js') }}"></script>
+</body>
+</html>
